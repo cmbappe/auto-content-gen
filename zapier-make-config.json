@@ -1,0 +1,8 @@
+{
+"steps": [
+{"trigger": "Google Sheets - New Row (Status=Generated)", "action": "Webhooks - POST to Colab Execution Endpoint with {script_text}"},
+{"action": "Colab - run notebook to generate MP4, save to Google Drive"},
+{"action": "Update Google Sheets row with Drive MP4 URL"},
+{"action": "(optional) Buffer - create post using MP4 link + caption + hashtags"}
+]
+}
